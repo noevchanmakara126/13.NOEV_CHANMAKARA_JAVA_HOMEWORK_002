@@ -28,8 +28,8 @@ public class AccountSeviceImp implements AccountService {
         table.addCell("Account Gender", cellStyle);
         table.addCell("Account Phone", cellStyle);
         table.addCell("Account Amount", cellStyle);
-        checkingAcc[0] = new CheckingAcc("Checking", "11111111", "Mey", "15-02-2004", "Famale", "078295989", 1000.0);
-        savingAcc[1] = new SavingAcc("Saving", "11111111", "Makara", "26-01-2004", "Male", "078295989", 100.1, 0.5);
+        checkingAcc[0] = new CheckingAcc("Checking", "11111111", "KIKI", "15-02-2004", "Famale", "078295989", 1000.0);
+        savingAcc[1] = new SavingAcc("Saving", "22222222", "Makara", "26-01-2004", "Male", "078295989", 100.1, 0.5);
         for (int i = 0; i <= customerCount; i++) {
             if (checkingAcc[i] != null) {
 //                System.out.println(checkingAcc[i].getUsername() + " - " + checkingAcc[i].getPhoneNumber());
