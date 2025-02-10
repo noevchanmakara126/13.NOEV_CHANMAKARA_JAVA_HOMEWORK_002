@@ -32,7 +32,6 @@ public class AccountSeviceImp implements AccountService {
         savingAcc[1] = new SavingAcc("Saving", "22222222", "Makara", "26-01-2004", "Male", "078295989", 100.1, 0.5);
         for (int i = 0; i <= customerCount; i++) {
             if (checkingAcc[i] != null) {
-//                System.out.println(checkingAcc[i].getUsername() + " - " + checkingAcc[i].getPhoneNumber());
                 table.addCell("", 7);
                 table.addCell(checkingAcc[i].getAcctype(), cellStyle);
                 table.addCell(checkingAcc[i].getAccId(), cellStyle);
@@ -68,7 +67,7 @@ public class AccountSeviceImp implements AccountService {
             if (!usernames.isEmpty()) {
                 break;
             } else {
-                System.out.println("❌ Username cannot be empty. Please try again.");
+                System.out.println(" Username cannot be empty. Please try again.");
             }
         }
 
@@ -119,7 +118,7 @@ public class AccountSeviceImp implements AccountService {
             if (genders.equalsIgnoreCase("Male") || genders.equalsIgnoreCase("Female")) {
                 break;
             } else {
-                System.out.println("❌ Invalid gender. Please enter 'Male' or 'Female'.");
+                System.out.println(" Invalid gender. Please enter 'Male' or 'Female'.");
             }
         }
 
@@ -130,11 +129,11 @@ public class AccountSeviceImp implements AccountService {
             if (phonenumbers.matches("^\\d{10}$")) {
                 break;
             } else {
-                System.out.println("❌ Invalid phone number. Please enter a 10-digit phone number.");
+                System.out.println(" Invalid phone number. Please enter a 10-digit phone number.");
             }
         }
 
-        System.out.println("✅ Successfully Created Account");
+        System.out.println(" Successfully Created Account");
         Random random = new Random();
         String accid = String.valueOf(1000000 + random.nextInt(90000000));
         checkingAcc[customerCount] = new CheckingAcc("Checking Account", accid, usernames, dobs, genders, phonenumbers, 0.0);
@@ -151,7 +150,7 @@ public class AccountSeviceImp implements AccountService {
             if (!usernames.isEmpty()) {
                 break;
             } else {
-                System.out.println("❌ Username cannot be empty. Please try again.");
+                System.out.println("Username cannot be empty. Please try again.");
             }
         }
 
@@ -202,7 +201,7 @@ public class AccountSeviceImp implements AccountService {
             if (genders.equalsIgnoreCase("Male") || genders.equalsIgnoreCase("Female")) {
                 break;
             } else {
-                System.out.println("❌ Invalid gender. Please enter 'Male' or 'Female'.");
+                System.out.println(" Invalid gender. Please enter 'Male' or 'Female'.");
             }
         }
 
@@ -213,7 +212,7 @@ public class AccountSeviceImp implements AccountService {
             if (phonenumbers.matches("^\\d{10}$")) {
                 break;
             } else {
-                System.out.println("❌ Invalid phone number. Please enter a 10-digit phone number.");
+                System.out.println(" Invalid phone number. Please enter a 10-digit phone number.");
             }
         }
 
